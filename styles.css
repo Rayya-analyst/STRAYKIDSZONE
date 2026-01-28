@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    background-position: center;
+    height: 98vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://i.pinimg.com/1200x/52/dc/cd/52dccd8af8ae27793f26fac12810ead9.jpg');
+    background-size: cover;
+}
+
+.my-navbar {
+    background-color: #7b1fa2; 
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.nav-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}

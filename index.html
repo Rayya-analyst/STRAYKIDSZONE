@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar & Banner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-purple my-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">Stray Kids Zone</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Members</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Albums</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Merch</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid banner d-flex justify-content-center align-items-center">
+    <div class="container">
+        <h2 class="text-light text-center display-5 mb-1">Welcome STAY</h2>
+        <h3 class="text-light text-center display- mb-1">Which Stray Kids era are you into today?</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-5 col-10">
+                <div class="input-group input-group-lg">
+                    <select class="form-control" id="InputGroupSelect04">
+                        <option selected>Select Era</option>
+                        <option value="1">KARMA Era</option>
+                        <option value="2">HOP Era</option>
+                        <option value="3">DO IT Era</option>
+                    </select>
+                    <button class="btn btn-lg btn-outline-warning text-light" type="button">Explore</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5">
+    <div class="container-fluid">
+        <h2 class="text-center fs-3">Album</h2>
+        <div class="row mt-3 justify-content-center">
+            <div class="col-md-3 hovered-card">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/35/87/2d/35872dfc4c28b01dcdf98fe6123acaf6.jpg" class="card-img-top" alt="Promo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">KARMA</h5>
+                        <p class="card-text">New album of Stray Kids</p>
+                        <a href="#" class="btn btn-warning">BUY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 hovered-card">
+                <div class="card">
+                    <img src="https://i.pinimg.com/1200x/1a/3f/50/1a3f50b28d35dda224d873be1b08bf64.jpg" class="card-img-top" alt="Promo 2">
+                    <div class="card-body">
+                        <h5 class="card-title">HOP</h5>
+                        <p class="card-text">New album of Stray Kids</p>
+                        <a href="#" class="btn btn-warning">BUY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 hovered-card">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/1a/df/47/1adf47bcf16f10e8786206c15a317d6f.jpg" class="card-img-top" alt="Promo 3">
+                    <div class="card-body">
+                        <h5 class="card-title">NOEASY</h5>
+                        <p class="card-text">New album of Stray Kids</p>
+                        <a href="#" class="btn btn-warning">BUY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
