@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar & Banner</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Stray Kids Zone</title>
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-purple my-navbar">
@@ -18,9 +19,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="#">Members</a></li>
-                <li class="nav-item"><a class="nav-link active" href="#">Albums</a></li>
-                <li class="nav-item"><a class="nav-link active" href="#">Merch</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Member</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Album</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Stream</a></li>
             </ul>
         </div>
     </div>
@@ -28,8 +29,8 @@
 
 <div class="container-fluid banner d-flex justify-content-center align-items-center">
     <div class="container">
-        <h2 class="text-light text-center display-5 mb-1">Welcome STAY</h2>
-        <h3 class="text-light text-center display-6 mb-1">Which Stray Kids era are you into today?</h3>
+        <h2 class="text-light text-center display-5 mb-1"><b>Welcome STAY</b></h2>
+        <h3 class="text-light text-center display-6 mb-1"><b>Which Stray Kids era are you into today?</b></h3>
         <div class="row justify-content-center">
             <div class="col-md-5 col-10">
                 <div class="input-group input-group-lg">
@@ -38,8 +39,12 @@
                         <option value="1">KARMA Era</option>
                         <option value="2">HOP Era</option>
                         <option value="3">DO IT Era</option>
+                        <option value="4">5 STAR Era</option>
+                        <option value="5">ROCK STAR Era</option>
+                        <option value="6">MAXIDENT Era</option>
+                        <option value="7">ATE Era</option>
                     </select>
-                    <button class="btn btn-lg btn-outline-warning text-light" type="button">Explore</button>
+                    <button class="btn btn-lg btn-outline-warning text-light" type="button"><b>Explore</b></button>
                 </div>
             </div>
         </div>
@@ -85,6 +90,59 @@
     </div>
 </div>
 
+<div class="container-fluid py-5">
+    <div class="container-fluid">
+                <div class="container">
+                    <h2 class="text-center mb-5">Terlaris</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/ab/02/49/ab02491fb8f053d30d1e4767cba7d353.jpg" class="card-img-top" alt="5 STAR Album">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">5 STAR</h5>
+                            <p class="card-text">Stray Kids 5th Mini Album</p>
+                            <h4 class="card-text text-warning">Rp. 350.000</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/27/a1/8b/27a18b164d866ccc74ce948cbf84dcbf.jpg" class="card-img-top" alt="5 STAR Album">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">MAXIDENT</h5>
+                            <p class="card-text">Stray Kids 4th Mini Album</p>
+                            <h4 class="card-text text-warning">Rp. 250.000</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/50/c1/ee/50c1eea6858e78c6316c4f13499a8abe.jpg" class="card-img-top" alt="5 STAR Album">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">ROCK STAR</h5>
+                            <p class="card-text">Stray Kids 6th Mini Album</p>
+                            <h4 class="card-text text-warning">Rp. 450.000</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/1200x/29/0e/6d/290e6dc767ffe90eedc532febd3440e2.jpg" class="card-img-top" alt="5 STAR Album">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">ATE</h5>
+                            <p class="card-text">Stray Kids 7th Mini Album</p>
+                            <h4 class="card-text text-warning">Rp. 550.000</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
 <section class="container-fluid py-5 main-color">
     <div class="container">
         <h2 class="text-light text-center mb-5 ">Our Services</h2>
@@ -128,6 +186,7 @@
                 </p>
             </div>
 
+            
         </div>
     </div>
 </section>
