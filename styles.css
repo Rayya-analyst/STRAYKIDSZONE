@@ -1,70 +1,212 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fa; 
 }
 
 .banner {
-    background-position: center;
-    height: 98vh;
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://i.pinimg.com/1200x/52/dc/cd/52dccd8af8ae27793f26fac12810ead9.jpg');
-    background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://i.pinimg.com/1200x/52/dc/cd/52dccd8af8ae27793f26fac12810ead9.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .my-navbar {
-    background-color: #7b1fa2; 
-    height: 60px;
-    display: flex;
-    align-items: center;
+  background-color: #5a2d82;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.my-navbar:hover {
+  background-color: #803cbb;
 }
 
 .nav-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
 }
 
 .nav-brand {
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-brand:hover {
+  color: #803cbb;
 }
 
 .nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 25px;
+  list-style: none;
+  display: flex;
+  gap: 25px;
 }
 
 .nav-menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav-menu a:hover {
-    text-decoration: underline;
+  color: #803cbb;
+  text-decoration: underline;
 }
 
-.icon-service{
-    width:90px;
-    height:90px;
-    border: solid #fff 2px;
-    border-radius: 50%;
-    color: #fff;
+.icon-service {
+  width: 90px;
+  height: 90px;
+  border: solid #fff 2px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-service:hover {
+  transform: scale(1.1);
 }
 
 .main-color {
-    background-color: #5a2d82;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px;
+  background-color: #5a2d82;
+  width: 100%;
 }
-.icon-service i{
-    font-size:40px;
-    align-items: center;
+
+.main-color:hover {
+  background-color: #803cbb;
+}
+
+.testimony {
+  background-color: #5a2d82 !important;
+}
+
+.testimony-card {
+  background: rgb(255, 255, 255) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 16px;
+  padding: 28px;
+  transition: .3s;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimony-card:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgb(255, 255, 255) !important;
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimony-card .quote-icon {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.testimony-card .author {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.testimony-card p {
+  font-size: 0.88rem;
+  color: rgb(0, 0, 0);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.testimony-card .stars {
+  color: #512379;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.subscribe-section {
+    background-color: #5a2d82; 
+    color: white;
+    padding: 40px 0;
+}
+
+.subscribe-section .social-icon {
+    font-size: 1.6rem;
+    color: #fff;
+    transition: .3s ease;
+}
+
+.subscribe-section .social-icon:hover {
+    color: #3b1c55;
+}
+
+.footer {
+    background-color: #21112e; 
+    color: white;
+    padding: 40px 0;
+    margin-bottom: 0;
+}
+
+.footer .social-icon {
+    font-size: 1.6rem;
+    color: #fff;
+    transition: .3s ease;
+}
+
+.footer .social-icon:hover {
+    color: #803cbb;
+}
+
+.footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+    color: #f8f3fd;
+}
+
+.hovered-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hovered-card:hover {
+    transform: translateY(-6px);
 }
