@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ body {
   color: #333;
 }
 
-/* Banner */
 .banner {
   background-position: center;
   height: 92vh; 
@@ -20,9 +18,8 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Navbar */
 .my-navbar {
-  background-color: #6a3d8b; /* Purple shade */
+  background-color: #6a3d8b; 
   height: 60px;
   display: flex;
   align-items: center;
@@ -30,7 +27,7 @@ body {
 }
 
 .my-navbar:hover {
-  background-color: #803cbb; /* Lighter purple on hover */
+  background-color: #803cbb; 
 }
 
 .nav-container {
@@ -49,7 +46,7 @@ body {
 }
 
 .nav-brand:hover {
-  color: #d1a1ff; /* Light purple for hover effect */
+  color: #d1a1ff; 
 }
 
 .nav-menu {
@@ -66,15 +63,12 @@ body {
 }
 
 .nav-menu a:hover {
-  color: #d1a1ff; /* Light purple hover effect */
+  color: #d1a1ff;
   text-decoration: underline;
 }
 
-
-
-/* Footer Styles */
 .footer {
-  background-color: #21112e; /* Dark purple */
+  background-color: #21112e; 
   color: white;
   padding: 40px 0;
   margin-bottom: 0;
@@ -87,7 +81,7 @@ body {
 }
 
 .footer .social-icon:hover {
-  color: #803cbb; /* Lighter purple on hover */
+  color: #803cbb; 
 }
 
 .footer h5 {
@@ -118,10 +112,9 @@ body {
 }
 
 .footer ul li a:hover {
-  color: #d1a1ff; /* Light purple hover for links */
+  color: #d1a1ff;
 }
 
-/* Social Media Icons */
 .subscribe-section .social-icon {
   font-size: 1.6rem;
   color: #fff;
@@ -129,14 +122,13 @@ body {
 }
 
 .subscribe-section .social-icon:hover {
-  color: #3b1c55; /* Darker shade on hover */
+  color: #3b1c55; 
 }
 
-/* Product Section Styles */
 .produk-banner {
   background-position: center;
   height: 92vh; 
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/image/skz.jpg');
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://4kwallpapers.com/images/walls/thumbs_2t/23839.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -150,7 +142,6 @@ body {
   text-align: center;
 }
 
-/* Responsive Styles */
 @media (max-width: 767px) {
   .produk-banner h1 {
     font-size: 2rem;
@@ -165,7 +156,6 @@ body {
   }
 }
 
-/* Hover Effects */
 .hovered-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -175,17 +165,15 @@ body {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Custom Background Color for Main Sections */
 .main-color {
-  background-color: #6a3d8b; /* Purple shade */
+  background-color: #6a3d8b; 
   width: 100%;
 }
 
 .main-color:hover {
-  background-color: #803cbb; /* Lighter purple on hover */
+  background-color: #803cbb; 
 }
 
-/* Testimonial Section Styles */
 .testimony {
   background-color: #6a3d8b !important;
 }
@@ -234,9 +222,8 @@ body {
   margin-bottom: 12px;
 }
 
-/* Subscribe Section */
 .subscribe-section {
-    background-color: #6a3d8b; /* Consistent purple */
+    background-color: #6a3d8b;
     color: white;
     padding: 40px 0;
 }
@@ -248,20 +235,18 @@ body {
 }
 
 .subscribe-section .social-icon:hover {
-    color: #3b1c55; /* Darker hover shade */
+    color: #3b1c55; 
 }
 
-/* Product Catalog Card Hover Effect */
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Card Styling - Purple-based */
 .card {
   border-radius: 10px;
   overflow: hidden;
-  background-color: #6a3d8b; /* Purple background for the card */
+  background-color: #6a3d8b; 
   color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -283,7 +268,7 @@ body {
 .card-title {
   font-size: 1.2rem;
   font-weight: bold;
-  color: white; /* White text for title, matching purple theme */
+  color: white; 
 }
 
 .card-text {
@@ -296,5 +281,5 @@ body {
 
 .card-body .dropdown-menu li a {
   text-decoration: none;
-  color: #f8f9fa; /* Off-white for dropdown links */
+  color: #f8f9fa; 
 }
