@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,18 +7,22 @@
 
 body {
   background-color: #f8f9fa; 
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
+/* Banner */
 .banner {
   background-position: center;
-  height: 100vh; 
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://i.pinimg.com/1200x/52/dc/cd/52dccd8af8ae27793f26fac12810ead9.jpg');
+  height: 92vh; 
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.pinimg.com/1200x/52/dc/cd/52dccd8af8ae27793f26fac12810ead9.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+/* Navbar */
 .my-navbar {
-  background-color: #5a2d82;
+  background-color: #6a3d8b; /* Purple shade */
   height: 60px;
   display: flex;
   align-items: center;
@@ -25,7 +30,7 @@ body {
 }
 
 .my-navbar:hover {
-  background-color: #803cbb;
+  background-color: #803cbb; /* Lighter purple on hover */
 }
 
 .nav-container {
@@ -44,7 +49,7 @@ body {
 }
 
 .nav-brand:hover {
-  color: #803cbb;
+  color: #d1a1ff; /* Light purple for hover effect */
 }
 
 .nav-menu {
@@ -61,38 +66,128 @@ body {
 }
 
 .nav-menu a:hover {
-  color: #803cbb;
+  color: #d1a1ff; /* Light purple hover effect */
   text-decoration: underline;
 }
 
-.icon-service {
-  width: 90px;
-  height: 90px;
-  border: solid #fff 2px;
-  border-radius: 50%;
+
+
+/* Footer Styles */
+.footer {
+  background-color: #21112e; /* Dark purple */
+  color: white;
+  padding: 40px 0;
+  margin-bottom: 0;
+}
+
+.footer .social-icon {
+  font-size: 1.6rem;
   color: #fff;
+  transition: .3s ease;
+}
+
+.footer .social-icon:hover {
+  color: #803cbb; /* Lighter purple on hover */
+}
+
+.footer h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+  color: #d1a1ff; /* Light purple hover for links */
+}
+
+/* Social Media Icons */
+.subscribe-section .social-icon {
+  font-size: 1.6rem;
+  color: #fff;
+  transition: .3s ease;
+}
+
+.subscribe-section .social-icon:hover {
+  color: #3b1c55; /* Darker shade on hover */
+}
+
+/* Product Section Styles */
+.produk-banner {
+  background-position: center;
+  height: 92vh; 
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/image/skz.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
-  transition: transform 0.3s ease-in-out;
 }
 
-.icon-service:hover {
-  transform: scale(1.1);
+.produk-banner h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
 }
 
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .produk-banner h1 {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+}
+
+/* Hover Effects */
+.hovered-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hovered-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Background Color for Main Sections */
 .main-color {
-  background-color: #5a2d82;
+  background-color: #6a3d8b; /* Purple shade */
   width: 100%;
 }
 
 .main-color:hover {
-  background-color: #803cbb;
+  background-color: #803cbb; /* Lighter purple on hover */
 }
 
+/* Testimonial Section Styles */
 .testimony {
-  background-color: #5a2d82 !important;
+  background-color: #6a3d8b !important;
 }
 
 .testimony-card {
@@ -139,8 +234,9 @@ body {
   margin-bottom: 12px;
 }
 
+/* Subscribe Section */
 .subscribe-section {
-    background-color: #5a2d82; 
+    background-color: #6a3d8b; /* Consistent purple */
     color: white;
     padding: 40px 0;
 }
@@ -152,61 +248,53 @@ body {
 }
 
 .subscribe-section .social-icon:hover {
-    color: #3b1c55;
+    color: #3b1c55; /* Darker hover shade */
 }
 
-.footer {
-    background-color: #21112e; 
-    color: white;
-    padding: 40px 0;
-    margin-bottom: 0;
+/* Product Catalog Card Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-.footer .social-icon {
-    font-size: 1.6rem;
-    color: #fff;
-    transition: .3s ease;
+/* Card Styling - Purple-based */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #6a3d8b; /* Purple background for the card */
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.footer .social-icon:hover {
-    color: #803cbb;
+.card-img-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
 }
 
-.footer h5 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.card-img-top:hover {
+  transform: scale(1.05);
 }
 
-.footer p {
-    font-size: 14px;
-    margin-bottom: 10px;
+.card-body {
+  padding: 20px;
+  text-align: center;
 }
 
-.footer ul {
-    list-style-type: none;
-    padding-left: 0;
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white; /* White text for title, matching purple theme */
 }
 
-.footer ul li {
-    margin-bottom: 10px;
+.card-text {
+  font-size: 0.9rem;
 }
 
-.footer ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s ease-in-out;
+.card-body .dropdown-menu {
+  border-radius: 0 0 10px 10px;
 }
 
-.footer ul li a:hover {
-    color: #f8f3fd;
-}
-
-.hovered-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hovered-card:hover {
-    transform: translateY(-6px);
+.card-body .dropdown-menu li a {
+  text-decoration: none;
+  color: #f8f9fa; /* Off-white for dropdown links */
 }
