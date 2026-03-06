@@ -81,7 +81,7 @@ body {
 }
 
 .footer .social-icon:hover {
-  color: #803cbb; 
+  color: #3e0a6b; 
 }
 
 .footer h5 {
@@ -115,20 +115,10 @@ body {
   color: #d1a1ff;
 }
 
-.subscribe-section .social-icon {
-  font-size: 1.6rem;
-  color: #fff;
-  transition: .3s ease;
-}
-
-.subscribe-section .social-icon:hover {
-  color: #3b1c55; 
-}
-
 .produk-banner {
   background-position: center;
   height: 92vh; 
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.pinimg.com/1200x/26/35/fd/2635fd8fd499b3d8b642737187f67ff4.jpg');
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/skz.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -246,7 +236,7 @@ body {
 .card {
   border-radius: 10px;
   overflow: hidden;
-  background-color: #6a3d8b; 
+  background-color: #440c6c; 
   color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -283,3 +273,4 @@ body {
   text-decoration: none;
   color: #f8f9fa; 
 }
+
