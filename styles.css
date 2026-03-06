@@ -116,9 +116,9 @@ body {
 }
 
 .produk-banner {
-  background-position: center;
-  height: 92vh; 
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.pinimg.com/1200x/a8/74/be/a874be68a78f53c5f4b96c06a2d8f9be.jpg');
+  background-position: center center;
+  height: 92vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/a8/74/be/a874be68a78f53c5f4b96c06a2d8f9be.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -126,24 +126,24 @@ body {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .produk-banner {
+    background-size: cover; 
+    background-position: center center;
+    height: 60vh; 
+  }
+}
+
+@media (max-width: 480px) {
+  .produk-banner {
+    height: 50vh; 
+  }
+}
+
 .produk-banner h1 {
   font-size: 3rem;
   color: white;
   text-align: center;
-}
-
-@media (max-width: 767px) {
-  .produk-banner h1 {
-    font-size: 2rem;
-  }
-
-  .card-title {
-    font-size: 1rem;
-  }
-
-  .card-body {
-    padding: 15px;
-  }
 }
 
 .hovered-card {
